@@ -1,0 +1,25 @@
+#shadow {
+    box-shadow: 5px 5px 10px var(--red);
+}
+
+#container-flex {
+    display:flex ;
+    justify-content: space-between;
+}
+
+#container-flex > div {
+    width: 30%;
+    height: 100px;
+}
+
+@media screen and (max-width: 480px) {
+    #container-flex {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #container-flex > div {
+        width: 100%;
+    }
+}
+
